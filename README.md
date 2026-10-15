@@ -1,3 +1,14 @@
+---
+title: Institutional Research API
+emoji: 📊
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+short_description: Financial statement, valuation and risk analysis for any listed company
+---
+
 # Institutional Research API
 
 HTTP access to the financial statement, valuation and risk engines. Built so a React frontend
