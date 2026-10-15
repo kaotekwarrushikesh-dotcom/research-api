@@ -1,0 +1,11 @@
+# The three engines are installed from their own repositories and are not reimplemented here.
+# They are listed explicitly rather than relied on transitively: institutional-research-platform
+# declares them in its requirements.txt, which pip does not read when installing from git, so
+# a transitive install silently omits them and fails at import.
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.6
+git+https://github.com/kaotekwarrushikesh-dotcom/financial-statement-intelligence.git@main
+git+https://github.com/kaotekwarrushikesh-dotcom/valuation-engine.git@main
+git+https://github.com/kaotekwarrushikesh-dotcom/risk-engine.git@main
+git+https://github.com/kaotekwarrushikesh-dotcom/institutional-research-platform.git@main
